@@ -19,11 +19,13 @@ if st.button("Book Ticket"):
 
         st.success("✅ Booking Successful!")
 
-        st.write("### 🎟 Booking Details")
-        st.write(f"Name: {name}")
-        st.write(f"Movie: {movie}")
-        st.write(f"Show Time: {time}")
-        st.write(f"Seat Type: {seat}")
+        st.write("### Booking Information")
+        st.write(f"""
+        Customer Name : {name}  
+        Movie Title   : {movie}  
+        Show Time     : {time}  
+        Seat Type     : {seat}
+        """)
 
     except ValueError as e:
         st.error(f"❌ Error: {e}")
