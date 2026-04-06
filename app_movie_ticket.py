@@ -17,9 +17,9 @@ if st.button("Book Ticket"):
         if name == "":
             raise ValueError("Customer name cannot be empty!")
 
-        st.success("✅ Booking Successful!")
+        st.success("✅ Ticket Booked Successful!")
 
-        st.write("### Booking Information")
+        st.write("===== Booking Summary =====")
         st.write(f"""
         Customer Name : {name}  
         Movie Title   : {movie}  
